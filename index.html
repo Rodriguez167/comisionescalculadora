@@ -256,9 +256,9 @@
                     doc.addImage(logoUrls[result.name] || '', 'PNG', 20, y, 10, 10); // Logo 10x10 mm
                     doc.text(`${result.name}:`, 35, y + 5);
                     doc.setTextColor(70, 130, 180); // Azul para valores
-                    doc.text(`Comisión: $${result.commission}, 25, y + 5;
-                    IVA: $${result.iva}, 35, y + 5;
-                    Comisión total: $${result.total}`, 45, y + 5);
+                    doc.text(`Comisión: $${result.commission}`, 25, y + 5;
+                    doc.text(`IVA: $${result.iva}`, 35, y + 5;
+                    doc.text(`Comisión total: $${result.total}`, 45, y + 5);
                     doc.setTextColor(40, 167, 69); // Verde para neto
                     doc.text(`Monto neto: $${result.net}`, 170, y, { align: 'right' });
                     doc.setTextColor(0, 0, 0); // Resetear color
